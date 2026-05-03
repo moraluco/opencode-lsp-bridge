@@ -1,0 +1,29 @@
+{
+  "servers": [
+    {
+      "language": "angelscript",
+      "extensions": [".as"],
+      "command": "node",
+      "args": ["dist/server.js", "--stdio"],
+      "cwd": "../as-lsp-hazelight"
+    },
+    {
+      "language": "cpp",
+      "extensions": [".cpp", ".h", ".hpp", ".c", ".cc", ".cxx", ".hh"],
+      "command": "clangd",
+      "args": []
+    },
+    {
+      "language": "python",
+      "extensions": [".py"],
+      "command": "pyright-langserver",
+      "args": ["--stdio"]
+    },
+    {
+      "language": "javascript",
+      "extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+      "command": "typescript-language-server",
+      "args": ["--stdio"]
+    }
+  ]
+}
