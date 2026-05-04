@@ -28,7 +28,20 @@ AI 调用 MCP 工具 "lsp_completion"  →
 
 启动时 bridge 自动向上查找 `opencode.json`，读取 `"lsp"` 段中配置的所有语言。
 
-## 安装
+## 一键安装
+
+```bash
+# Windows
+.\install.bat
+
+# 之后在 opencode.json 中补上 lsp 和 mcp 段，重启 OpenCode
+```
+
+**bridge 已预编译**（Windows/Linux/macOS），无需安装 Go。AS LSP 需要 Node.js 18+。
+
+---
+
+## 手动安装
 
 > 所有路径用 `$PLUGIN_DIR` 占位。替换为你 clone 本仓库的实际绝对路径。
 

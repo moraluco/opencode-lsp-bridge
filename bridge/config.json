@@ -5,11 +5,11 @@
       "extensions": [".as"],
       "command": "node",
       "args": ["dist/server.js", "--stdio"],
-      "cwd": "../as-lsp-hazelight"
+      "cwd": "../as-lsp"
     },
     {
       "language": "cpp",
-      "extensions": [".cpp", ".h", ".hpp", ".c", ".cc", ".cxx", ".hh"],
+      "extensions": [".cpp", ".h", ".hpp", ".c", ".cc"],
       "command": "clangd",
       "args": []
     },
@@ -21,7 +21,7 @@
     },
     {
       "language": "javascript",
-      "extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+      "extensions": [".js", ".mjs", ".ts"],
       "command": "typescript-language-server",
       "args": ["--stdio"]
     }
